@@ -1,0 +1,22 @@
+{
+  "name": "conversor-binario",
+  "version": "1.0.0",
+  "description": "trabalha conversao de binario",
+  "main": "binario.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Dantas16"
+  },
+  "author": "Gutemberg Dantas",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-typescript": "^3.1.5",
+    "typescript": "^2.2.1"
+  }
+}

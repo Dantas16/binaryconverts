@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* Variáveis */
+/* Mixins */
+/* Classes Css */
+* {
+  margin: 0 auto;
+  padding: 0; }
+
+body {
+  font-family: Arial, helvetica, sans-serif;
+  font-size: 16px; }
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0.5%;
+  overflow: hidden; }
+  @media (min-width: 100px) {
+    .container {
+      max-width: 99%; } }
+  @media (min-width: 250px) {
+    .container {
+      max-width: 80%; } }
+  @media (min-width: 500px) {
+    .container {
+      max-width: 70%; } }
+  @media (min-width: 700px) {
+    .container {
+      max-width: 50%; } }
+
+.alert {
+  position: relative;
+  display: inline-block;
+  padding: 2%;
+  font-size: 0.8em;
+  color: #dc143c; }
+
+.form-group {
+  position: relative;
+  display: block;
+  margin-bottom: 2%;
+  padding: 0.2%; }
+  .form-group label {
+    display: block;
+    margin: 0;
+    font-weight: bolder;
+    color: #003333; }
+  .form-group input {
+    margin: 0;
+    padding: 2%;
+    width: 90%;
+    border: 1px solid rgba(10, 90, 90, 0.1); }
+    .form-group input:hover {
+      transition: 0.4s linear all;
+      border: 1px solid rgba(10, 90, 90, 0.4); }
+
+.btn {
+  cursor: pointer;
+  padding: 2%;
+  color: #fff;
+  background: rgba(10, 90, 90, 0.8);
+  border: 1px solid rgba(10, 90, 90, 0.2); }
+  .btn:hover {
+    transition: 0.2s linear all;
+    border-radius: 10px 0px; }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora binária</title>
+    <meta name="author" content="Gutemberg Dantas - gti5tecnologias@gmail.com">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Calculadora Binária</h1>
+    <form name="calcBin" method="post">
+        <div class="form-group">
+            <label for="decimal">Decimal:</label>
+            <input type="number" id="decimal" name="decimal" title="Decimal" placeholder="Decimal">
+        </div>
+        <div class="form-group">
+            <label for="binario">Binário:</label>
+            <input readonly type="text" id="binario" name="binario" title="Binário" placeholder="Binário">
+        </div>
+        <div class="form-group">
+            <button type="button" id="decBin" class="btn">Converter</button>
+            <button tyoe="reset" id="reset" class="btn">Resetar</button>
+            <div class="alert" id="main-alert"></div>
+        </div>
+    </form>
+</div>
+    <script type="text/javascript" src="binario.js"></script>
+</body>
+</html>

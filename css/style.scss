@@ -1,0 +1,87 @@
+/* Variáveis */
+$xs-width: 100px;
+$sm-width: 250px;
+$med-width: 500px;
+$lg-width: 700px;
+$xlg-width: 900px;
+
+/* Mixins */
+@mixin breakpoint($min) {
+    @media (min-width: $min) { @content; }
+}
+
+/* Classes Css */
+*{ margin: 0 auto; padding: 0; }
+
+body {
+    font-family: Arial, helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0.5%;
+    overflow: hidden;
+    
+    @include breakpoint($xs-width) {
+        max-width: 99%;
+    }
+    
+    @include breakpoint($sm-width) {
+        max-width: 80%;
+    }
+    
+    @include breakpoint($med-width) {
+        max-width: 70%;
+    }
+    
+    @include breakpoint($lg-width) {
+        max-width: 50%;
+    }
+}
+
+.alert {
+    position: relative;
+    display: inline-block;
+    padding: 2%;
+    font-size: 0.8em;
+    color: #dc143c;
+}
+
+.form-group {
+    position: relative;
+    display: block;
+    margin-bottom: 2%;
+    padding: 0.2%;
+    
+    label {
+        display: block;
+        margin: 0;
+        font-weight: bolder;
+        color: #003333;
+    }
+    
+    input {
+        margin: 0;
+        padding: 2%;
+        width: 90%;
+        border: 1px solid rgba(10,90,90,0.1);
+        &:hover{
+            transition: 0.4s linear all;
+            border: 1px solid rgba(10,90,90,0.4);
+        }
+    }
+}
+
+.btn {
+    cursor: pointer;
+    padding: 2%;
+    color: #fff;
+    background: rgba(10,90,90,0.8);
+    border: 1px solid rgba(10,90,90,0.2);
+    &:hover {
+        transition: 0.2s linear all;
+        border-radius: 10px 0px;
+    }
+}

@@ -1,0 +1,16 @@
+############ CONFIGURAÇÕES ################
+
+1 - Instalar nodejs e npm
+
+2 - Instalar BrowserSync
+npm install -g browser-sync
+browser-sync --version
+
+3 - Instalar gulp
+npm install -g gulp
+
+4 - Instalar o sass para gulp (como dependência do projeto)
+npm install --save-dev gulp-sass
+
+5 - Instalar o typescript
+npm install --save-dev typescript gulp-typescript
