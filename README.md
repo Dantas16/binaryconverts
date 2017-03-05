@@ -1,11 +1,11 @@
 # binaryconverts
 Aplicação para conversão de números binários - Converter binary numbers
 
---Nodejs npm
---Gulp
---Typescript
---Sass
---Browser-sync
+- Nodejs npm
+- Gulp
+- Typescript
+- Sass
+- Browser-sync
 
 Desenvolvido utilizando **gulp** como automatizador para conversão do **typescript** em **js**, **sass** em **css** e 
 **browser-sync** para sincronizar em tempo real as alterações feitas, o objetivo foi montar uma aplicação simples utilizando 
